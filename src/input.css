@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	min-height: 100vh;
+	min-width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.118), rgba(4, 9, 30, 0.7)), url(../images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+
+nav {
+	display: flex;
+	padding: 1% 4%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #ffffff;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+	width: 100%;
+
+}
+
+.text-box {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+
+.aboutcards {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+	padding-top: 5px;
+	position: relative;
+	
+
+}
+
+.card-about {
+	
+	
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.card-img-about1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../images/conference.jpeg);
+	background-size: cover;
+	border-radius: 20px;
+	transform: translateZ(40px);
+}
+
+.card-img-about2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(https://v1.nitj.ac.in/ece/images/aboutus/newbuild.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	transform: translateZ(40px);
+}
+
+.card-img-about3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(https://th.bing.com/th/id/R.52c87f4ca770964439f560383dbc8cc7?rik=zf4SU5964gX40A&pid=ImgRaw&r=0);
+	background-size: cover;
+	border-radius: 20px;
+	transform: translateZ(40px);
+}
+
+.card-body-about {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
+	width: 85%;
+	height: 87%;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 5px solid #0B2447;
+}
+
+.card-about:hover {
+	transform: rotateY(180deg);
+
+
+}
+
+.card-body-about .bg1 {
+	position: absolute;
+	background: #fff;
+	border-radius: 100px;
+	width: 0%;
+	transition: .5s;
+}
+
+.card-body-about .bg1:nth-child(1) {
+	height: 25%;
+	transform-origin: left;
+	top: 0;
+	left: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-body-about .bg1:nth-child(2) {
+	height: 50%;
+	transform-origin: right;
+	top: 5%;
+	right: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-body-about .bg1:nth-child(3) {
+	height: 50%;
+	transform-origin: left;
+	top: 70%;
+	left: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-about:hover .card-body-about .bg1 {
+	width: 200%;
+	transition-delay: 1s;
+}
+
+.card-about:hover .card-body-about .bg1:nth-child(2) {
+	transition-delay: 1.5s;
+}
+
+.card-about:hover .card-body-about .bg1:nth-child(3) {
+	transition-delay: 2s;
+}
+
+.card-body-about .bg2 {
+	position: absolute;
+	background: #fff;
+	border-radius: 100px;
+	width: 0%;
+	transition: .5s;
+}
+
+.card-body-about .bg2:nth-child(1) {
+	height: 25%;
+	transform-origin: left;
+	top: 0;
+	left: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-body-about .bg2:nth-child(2) {
+	height: 50%;
+	transform-origin: right;
+	top: 5%;
+	right: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-body-about .bg2:nth-child(3) {
+	height: 50%;
+	transform-origin: left;
+	top: 70%;
+	left: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-about:hover .card-body-about .bg2 {
+	width: 200%;
+	transition-delay: 1s;
+}
+
+.card-about:hover .card-body-about .bg2:nth-child(2) {
+	transition-delay: 1.5s;
+}
+
+.card-about:hover .card-body-about .bg2:nth-child(3) {
+	transition-delay: 2s;
+}
+
+.card-body-about .bg3 {
+	position: absolute;
+	background: #fff;
+	border-radius: 100px;
+	width: 0%;
+	transition: .5s;
+}
+
+.card-body-about .bg3:nth-child(1) {
+	height: 25%;
+	transform-origin: left;
+	top: 0;
+	left: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-body-about .bg3:nth-child(2) {
+	height: 50%;
+	transform-origin: right;
+	top: 5%;
+	right: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-body-about .bg3:nth-child(3) {
+	height: 50%;
+	transform-origin: left;
+	top: 70%;
+	left: -30%;
+	transform: rotate(-10deg);
+}
+
+.card-about:hover .card-body-about .bg3 {
+	width: 200%;
+	transition-delay: 1s;
+}
+
+.card-about:hover .card-body-about .bg3:nth-child(2) {
+	transition-delay: 1.5s;
+}
+
+.card-about:hover .card-body-about .bg3:nth-child(3) {
+	transition-delay: 2s;
+}
+
+.content {
+	position: relative;
+	opacity: 0;
+	transition: .5s;
+	padding: 60px 10px;
+	text-align: center;
+}
+
+.title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #292929;
+	text-transform: uppercase;
+}
+
+.card-about:hover .content {
+	opacity: 1;
+	transition-delay: 2.5s;
+}
+
+
+.thethreecards{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url(../images/conference2.jpeg);
+	background-size: cover;
+}
