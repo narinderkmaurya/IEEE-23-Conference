@@ -1567,6 +1567,10 @@ input:checked + .toggle-bg {
   font-family: Questrial, sans-serif;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1639,6 +1643,10 @@ input:checked + .toggle-bg {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .leading-6 {
@@ -2262,7 +2270,7 @@ nav {
   }
 }
 
-/* comittee members */
+/* committee members */
 
 .committee {
   background-image: linear-gradient(rgba(1, 3, 10, 0.518), rgba(4, 9, 30, 0.7)), url(https://images.edexlive.com/uploads/user/imagelibrary/2021/1/7/original/001_1.jpeg);
@@ -2276,9 +2284,11 @@ nav {
   z-index: 10;
   position: sticky;
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
   top: 0%;
+  text-align: center;
+  opacity: 0.8;
   padding: 7px;
   background: rgb(245, 245, 246);
   background: linear-gradient(294deg, rgba(245, 245, 246, 1) 5%, rgba(241, 246, 254, 1) 65%, rgba(233, 233, 236, 1) 100%);
@@ -2299,7 +2309,7 @@ nav {
   background-size: cover;
 }
 
-.card-comittee {
+.card-committee {
   width: 250px;
   height: 350px;
   background: #ffffff7a;
@@ -2310,7 +2320,7 @@ nav {
   transition: box-shadow .3s ease, transform .2s ease;
 }
 
-.card-comittee-info {
+.card-committee-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2320,7 +2330,7 @@ nav {
 
 /*Image*/
 
-.card-comittee-avatar {
+.card-committee-avatar {
   --size: 100px;
   background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
   width: var(--size);
@@ -2332,15 +2342,15 @@ nav {
 
 /* image improvisation */
 
-.card-comittee-avatar img {
+.card-committee-avatar img {
   height: inherit;
   width: inherit;
   border-radius: inherit;
 }
 
-/*card-comittee footer*/
+/*card-committee footer*/
 
-.card-comittee-social {
+.card-committee-social {
   transform: translateY(200%);
   display: flex;
   padding-left: 0px;
@@ -2351,11 +2361,11 @@ nav {
   transition: transform .2s ease, opacity .2s ease;
 }
 
-.card-comittee-social__item {
+.card-committee-social__item {
   list-style: none;
 }
 
-.card-comittee-social__item svg {
+.card-committee-social__item svg {
   display: block;
   height: 18px;
   width: 18px;
@@ -2366,7 +2376,7 @@ nav {
 
 /*Text*/
 
-.card-comittee-title {
+.card-committee-title {
   color: #333;
   font-size: 1.5em;
   font-weight: 600;
@@ -2374,7 +2384,7 @@ nav {
   transition: 0.2s ease;
 }
 
-.card-comittee-subtitle {
+.card-committee-subtitle {
   margin-top: 20px;
   color: #4f5b62;
   font-size: 1em;
@@ -2400,30 +2410,30 @@ nav {
 
 /*Hover*/
 
-.card-comittee:hover {
+.card-committee:hover {
   box-shadow: 0 14px 50px #000000;
   border: 0px;
 }
 
-.card-comittee:hover .card-comittee-info {
+.card-committee:hover .card-committee-info {
   transform: translateY(-5%);
 }
 
-.card-comittee:hover .card-comittee-social {
+.card-committee:hover .card-committee-social {
   transform: translateY(100%);
   opacity: 1;
 }
 
-.card-comittee-social__item svg:hover {
+.card-committee-social__item svg:hover {
   fill: #232323;
   transform: scale(1.5);
 }
 
-.card-comittee-avatar:hover {
+.card-committee-avatar:hover {
   transform: scale(1.2);
 }
 
-.card-comittee-title:hover {
+.card-committee-title:hover {
   color: #132f83;
   cursor: default;
   transform: scale(1.01);

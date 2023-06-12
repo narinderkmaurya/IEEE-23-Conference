@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Manrope:wght@200;400;500&family=Prompt:wght@200;300;400;500;600;800&family=Questrial&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
       rel="stylesheet"
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <section class="header font-Manrope">
       <nav>
         <a
@@ -31,7 +32,10 @@
             class="w-16 h-16 hover:scale-110 transition-all sm:w-[15%] sm:h-[15%]"
           />
           <span
-            class="flex-col hover:animate-pulse transition-all font-semibold flex" 
+            class="flex-col hover:animate-pulse transition-all font-semibold flex" data-aos="zoom-in-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
           >
             IEEE WCONF 2023<span class="text-xs text-gray-300 font-thin"
               >IEEE World Conference on <br class="sm:hidden" />
@@ -41,7 +45,10 @@
         >
 
         <div class="nav-links flex-1 text-white text-xl text-right">
-          <ul class="inline-block p-3 relative">
+          <ul class="inline-block p-3 relative" data-aos="slide-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000">
             <li
               class="inline-block border-white border-s-2 hover:text-[#A5D7E8] transition-all p-3 relative"
             >
@@ -55,7 +62,7 @@
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
             >
-              <a href="contact.html">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
@@ -70,10 +77,14 @@
         <h1 class="sm:text-8xl text-3xl pt-12 sm:pt-0 font-thin sticky text-gray-300">
           About <br class="">
           <span class="font-semibold text-4xl  sm:text-8xl sticky text-white"
-            >NITJ IEEE <span class=" sticky text-red-400">WCONF'23</span>
+            >NITJ IEEE <span class=" sticky text-red-400" data-aos="zoom-out-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000">WCONF'23</span>
           </span>
         </h1>
-        <p class="sm:text-white/80 pt-12 sm:pt-0  text-base">
+        <p class="sm:text-white/80 pt-12 sm:pt-0  text-base"  data-aos="flip-up"
+        data-aos-duration="1000">
           <span class="text-2xl">L</span> orem ipsum dolor sit amet consectetur
           adipisicing elit. Atque minima necessitatibus dolore velit. Inventore
           eum praesentium dolorum iusto <br class="hidden sm:block" />
@@ -104,9 +115,93 @@
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-3xl lg:text-7xl   hover:animate-pulse transition-all font-semibold  title-font lg:mt-12 lg:mb-12 text-[#f98080]"  data-aos="zoom-in-left"
         >Committee Members</h1>
-        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider">Chief Patrons</p>
+        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider" data-aos="slide-down"
+        data-aos-duration="1000">Chief Patrons</p>
       </div>
-      <div class="flex flex-wrap -m-2 text-center">
+      <div class="flex flex-wrap -m-2 text-center" data-aos="flip-down"
+      data-aos-duration="1000">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" >
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" >
+            
+            <div class="flex-grow ">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Holden Caulfield</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Henry Letham</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Oskar Blinde</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">John Doe</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Martin Eden</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Boris Kitua</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Atticus Finch</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Alper Kamu</h2>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            
+            <div class="flex-grow">
+              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Rodrigo Monchi</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container  px-5 py-4 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        
+        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider" data-aos="slide-down"
+        data-aos-duration="1000">Executive General Chair</p>
+      </div>
+      <div class="flex flex-wrap -m-2 text-center" data-aos="flip-left"
+      data-aos-duration="1000">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
             
@@ -184,9 +279,11 @@
     <div class="container  px-5 py-4 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         
-        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider">Chief Patrons</p>
+        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider"data-aos="slide-down"
+        data-aos-duration="1000">Program General Chair</p>
       </div>
-      <div class="flex flex-wrap -m-2 text-center">
+      <div class="flex flex-wrap -m-2 text-center"data-aos="zoom-in"
+      data-aos-duration="1000">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
             
@@ -264,89 +361,11 @@
     <div class="container  px-5 py-4 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         
-        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider">Chief Patrons</p>
+        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider" data-aos="slide-down"
+        data-aos-duration="1000">Advisory committee</p>
       </div>
-      <div class="flex flex-wrap -m-2 text-center">
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Holden Caulfield</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Henry Letham</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Oskar Blinde</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">John Doe</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Martin Eden</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Boris Kitua</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Atticus Finch</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Alper Kamu</h2>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            
-            <div class="flex-grow">
-              <h2 class="text-white  title-font font-semibold lg:text-2xl hover:text-gray-300 transition-all">Rodrigo Monchi</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container  px-5 py-4 mx-auto">
-      <div class="flex flex-col text-center w-full mb-12">
-        
-        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider">Chief Patrons</p>
-      </div>
-      <div class="flex flex-wrap  -m-2 text-center">
+      <div class="flex flex-wrap  -m-2 text-center"data-aos="flip-right"
+      data-aos-duration="1000">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border  p-4 rounded-lg">
             
@@ -424,9 +443,11 @@
     <div class="container  px-5 pt-4 pb-12 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         
-        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider">Chief Patrons</p>
+        <p class="lg:w-2/3 mx-auto text-5xl text-white leading-relaxed font-thin font-Manrope tracking-wider" data-aos="slide-down"
+        data-aos-duration="1000"> Technical Program Committee</p>
       </div>
-      <div class="flex flex-wrap -m-2 text-center">
+      <div class="flex flex-wrap -m-2 text-center"data-aos="fade-down-left"
+      data-aos-duration="1000">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
             
@@ -507,26 +528,28 @@
 
 
   <!-- conference chairs from organizing institute -->
-  <div class="speak  lg:text-6xl font-Manrope font-semibold text-[hsl(10,79%,63%)]">Key Speakers</div>
+  <div class="speak  lg:text-7xl font-extrabold font-Manrope text-[hsl(10,79%,63%)]" data-aos="slide-up"
+  data-aos-duration="1000"> Key Speakers</div>
   <div class="parent  gap-x-20">
-      <div class="card-comittee shadow-black/30 shadow-xl   ">
-          <div class="card-comittee-info ">
-              <div class="card-comittee-avatar">
+      <div class="card-committee shadow-black/30 shadow-xl   "data-aos="fade-up-right"
+      data-aos-duration="1000">
+          <div class="card-committee-info ">
+              <div class="card-committee-avatar">
                   <img src="../images/OIP.jpeg" alt="">
 
               </div>
-              <div class="card-comittee-title">Dr. Manjeet Singh</div>
-              <div class="card-comittee-subtitle">Cordinator &amp; Organiser</div>
+              <div class="card-committee-title">Dr. Manjeet Singh</div>
+              <div class="card-committee-subtitle">Cordinator &amp; Organiser</div>
           </div>
-          <ul class="card-comittee-social">
-              <li class="card-comittee-social__item">
+          <ul class="card-committee-social">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <a href="https://www.instagram.com/ashutosh_271002/" target="_blank">
                       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -535,7 +558,7 @@
                       </svg>
                   </a>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
@@ -544,25 +567,26 @@
               </li>
           </ul>
       </div>
-      <div class="card-comittee shadow-black/30 shadow-xl ">
-          <div class="card-comittee-info">
-              <div class="card-comittee-avatar">
+      <div class="card-committee shadow-black/30 shadow-xl " data-aos="flip-up"
+      data-aos-duration="1000">
+          <div class="card-committee-info">
+              <div class="card-committee-avatar">
                   <img src="../images/OIP.jpeg
 " alt="">
 
               </div>
-              <div class="card-comittee-title">Dr. Manjeet Singh</div>
-              <div class="card-comittee-subtitle">Cordinator &amp; Organiser</div>
+              <div class="card-committee-title">Dr. Manjeet Singh</div>
+              <div class="card-committee-subtitle">Cordinator &amp; Organiser</div>
           </div>
-          <ul class="card-comittee-social">
-              <li class="card-comittee-social__item">
+          <ul class="card-committee-social">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <a href="https://www.instagram.com/ashutosh_271002/" target="_blank">
                       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -571,7 +595,7 @@
                       </svg>
                   </a>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
@@ -580,25 +604,26 @@
               </li>
           </ul>
       </div>
-      <div class="card-comittee shadow-black/30 shadow-xl ">
-          <div class="card-comittee-info">
-              <div class="card-comittee-avatar">
+      <div class="card-committee shadow-black/30 shadow-xl "data-aos="flip-up"
+      data-aos-duration="1000">
+          <div class="card-committee-info">
+              <div class="card-committee-avatar">
                   <img src="../images/OIP.jpeg
 " alt="">
 
               </div>
-              <div class="card-comittee-title">Dr. Manjeet Singh</div>
-              <div class="card-comittee-subtitle">Cordinator &amp; Organiser</div>
+              <div class="card-committee-title">Dr. Manjeet Singh</div>
+              <div class="card-committee-subtitle">Cordinator &amp; Organiser</div>
           </div>
-          <ul class="card-comittee-social">
-              <li class="card-comittee-social__item">
+          <ul class="card-committee-social">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <a href="https://www.instagram.com/ashutosh_271002/" target="_blank">
                       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -607,7 +632,7 @@
                       </svg>
                   </a>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
@@ -616,31 +641,32 @@
               </li>
           </ul>
       </div>
-      <div class="card-comittee shadow-black/30 shadow-xl">
-          <div class="card-comittee-info">
-              <div class="card-comittee-avatar">
+      <div class="card-committee shadow-black/30 shadow-xl"data-aos="fade-up-left"
+      data-aos-duration="1000">
+          <div class="card-committee-info">
+              <div class="card-committee-avatar">
                   <img src="../images/OIP.jpeg
 " alt="">
               </div>
-              <div class="card-comittee-title">Dr. Manjeet Singh</div>
-              <div class="card-comittee-subtitle">Cordinator &amp; Organiser</div>
+              <div class="card-committee-title">Dr. Manjeet Singh</div>
+              <div class="card-committee-subtitle">Cordinator &amp; Organiser</div>
           </div>
-          <ul class="card-comittee-social">
-              <li class="card-comittee-social__item">
+          <ul class="card-committee-social">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
@@ -649,31 +675,32 @@
               </li>
           </ul>
       </div>
-      <div class="card-comittee shadow-black/30 shadow-xl">
-          <div class="card-comittee-info">
-              <div class="card-comittee-avatar">
+      <div class="card-committee shadow-black/30 shadow-xl"data-aos="fade-up-right"
+      data-aos-duration="1000">
+          <div class="card-committee-info">
+              <div class="card-committee-avatar">
                   <img src="../images/OIP.jpeg
 " alt="">
               </div>
-              <div class="card-comittee-title">Dr. Manjeet Singh</div>
-              <div class="card-comittee-subtitle">Cordinator &amp; Organiser</div>
+              <div class="card-committee-title">Dr. Manjeet Singh</div>
+              <div class="card-committee-subtitle">Cordinator &amp; Organiser</div>
           </div>
-          <ul class="card-comittee-social">
-              <li class="card-comittee-social__item">
+          <ul class="card-committee-social">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
@@ -682,31 +709,32 @@
               </li>
           </ul>
       </div>
-      <div class="card-comittee shadow-black/30 shadow-xl">
-          <div class="card-comittee-info">
-              <div class="card-comittee-avatar">
+      <div class="card-committee shadow-black/30 shadow-xl" data-aos="fade-up-left"
+      data-aos-duration="1000">
+          <div class="card-committee-info">
+              <div class="card-committee-avatar">
                   <img src="../images/OIP.jpeg
 " alt="">
               </div>
-              <div class="card-comittee-title">Dr. Manjeet Singh</div>
-              <div class="card-comittee-subtitle">Cordinator &amp; Organiser</div>
+              <div class="card-committee-title">Dr. Manjeet Singh</div>
+              <div class="card-committee-subtitle">Cordinator &amp; Organiser</div>
           </div>
-          <ul class="card-comittee-social">
-              <li class="card-comittee-social__item">
+          <ul class="card-committee-social">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
                       </path>
                   </svg>
               </li>
-              <li class="card-comittee-social__item">
+              <li class="card-committee-social__item">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
@@ -724,7 +752,10 @@
   
       <!-- footer -->
    
-      <footer class="footer-distributed font-Manrope">
+      <footer class="footer-distributed font-Manrope" data-aos="zoom-out-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000">
 
         <div class="footer-left text-center lg:text-left ">
 
@@ -757,7 +788,7 @@
 
         <div class="footer-right">
 
-            <p class="text-2xl">Contact Us</p>
+            <p id="contact" class="text-2xl">Contact Us</p>
 
             <form action="https://formsubmit.co/mauryanarinder2002@gmail.com"
             method="POST">
@@ -771,11 +802,13 @@
         </div>
 
     </footer> 
+
   
       <!-- external js -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
       <script src="./main.js" ></script>
       <script type="text/javascript" src="particles.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="main.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
