@@ -758,7 +758,13 @@ nav {
 .container th:nth-child(4) { display: none; }
 }
 .table-bg{
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background-image: linear-gradient(to top, #cfd9df 0%, #1f6b93 100%);
 }
 
+/* callforpapers */
+.callforpapers{
+	background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a78585, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
