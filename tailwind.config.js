@@ -4,8 +4,8 @@ module.exports = {
   darkMode: 'media',
   screens:{
     sm: '480px',
-    md: '768px',
-    lg: '976px',
+    md: '769px',
+    lg: '1024px',
     xl: '1440px',
   },
   theme: {
