@@ -14,7 +14,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 2000, function(){
+      }, 1000, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -22,3 +22,13 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+// for toggle menu
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+  navLinks.style.right = "0";
+}
+var navLinks = document.getElementById("navLinks");
+function closeMenu(){
+  navLinks.style.right = "-200px";
+}

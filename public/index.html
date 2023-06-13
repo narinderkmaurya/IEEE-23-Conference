@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE WCONF - NITJ</title>
+    <link rel="icon" type="image/x-icon" href="../images/nitj.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/f0737713a7.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Manrope:wght@200;400;500&family=Prompt:wght@200;300;400;500;600;800&family=Questrial&display=swap"
       rel="stylesheet"
@@ -15,12 +17,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="overflow-x-hidden ">
-    <section class="header  font-Manrope">
+  <body class="overflow-x-hidden">
+    <section class="header font-Manrope">
       <nav>
         <a
           href="index.html"
@@ -31,11 +33,8 @@
             class="w-16 h-16 hover:scale-110 transition-all sm:w-[15%] sm:h-[15%]"
           />
           <span
-            class="flex-col hover:animate-pulse transition-all font-semibold flex"  data-aos="zoom-in-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-           
+            class="flex-col hover:animate-pulse transition-all font-semibold flex"
+            data-aos="zoom-in-left"
           >
             IEEE WCONF 2023<span class="text-xs text-gray-300 font-thin"
               >IEEE World Conference on <br class="sm:hidden" />
@@ -44,15 +43,17 @@
           </span></a
         >
 
-        <div class="nav-links flex-1 text-white text-xl text-right">
-          <ul class="inline-block p-3 relative" data-aos="slide-right"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000">
+        <div
+          class="nav-links flex-1 text-white text-xl text-right"
+          id="navLinks"
+        >
+         <i onclick="closeMenu()" class="fa-solid fa-circle-xmark sm:hidden p-12 text-3xl"> </i>
+         
+          <ul class="inline-block p-3 relative" d>
             <li
-              class="inline-block border-white border-s-2 hover:text-[#A5D7E8] transition-all p-3 relative"
+              class="inline-block border-0 lg:border-white lg:border-s-2 hover:text-[#A5D7E8] transition-all p-3 relative"
             >
-              <a href="index.html " class=" ">Home</a>
+              <a href="index.html " class="border-b-2 border-pink-300">Home</a>
             </li>
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
@@ -67,7 +68,7 @@
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
             >
-              <a href="">Authors </a>
+              <a href="authors.html">For Authors </a>
             </li>
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
@@ -76,20 +77,31 @@
             </li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
 
-      <div class="text-box w-[90%] text-white text-center absolute " >
-        <h1 class="sm:text-8xl text-3xl pt-12 sm:pt-0 font-thin sticky text-gray-300" >
-          Welcome to <br class="">
-          <span class="font-semibold text-4xl  sm:text-8xl text-white"
-            >NITJ IEEE <span class=" font-Manrope text-red-400"  data-aos="zoom-out-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000">WCONF'23</span>
+      <div class="text-box w-[90%] text-white text-center absolute">
+        <h1
+          class="sm:text-8xl text-3xl pt-12 sm:pt-0 font-thin sticky text-gray-300"
+        >
+          Welcome to <br class="" />
+          <span class="font-semibold text-4xl sm:text-8xl text-white"
+            >NITJ IEEE
+            <span
+              class="font-Manrope text-red-400"
+              data-aos="zoom-out-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              >WCONF'23</span
+            >
           </span>
         </h1>
-        <p class="sm:text-white/80 pt-12 sm:pt-0  text-base"  data-aos="flip-up"
-        data-aos-duration="1000" > 
+        <p
+          class="sm:text-white/80 pt-12 sm:pt-0 text-base"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+        >
           <span class="text-2xl">L</span> orem ipsum dolor sit amet consectetur
           adipisicing elit. Atque minima necessitatibus dolore velit. Inventore
           eum praesentium dolorum iusto <br class="hidden sm:block" />
@@ -106,207 +118,258 @@
       </div>
     </section>
 
-
-	
-     <!-- info-cards -->
-     <div  class="pt-20 pb-20 sm:p-9 thethreecards " >
+    <!-- info-cards -->
+    <div class="pt-20 pb-20 sm:p-9 thethreecards">
       <div>
-        <h1  data-aos="fade-down-right"  data-aos-duration="1000"
-        class="text-7xl text-center items-center text-white font-semibold pt-4 pb-2">
-          WCONF <span class="text-red-400" >2023'</span> 
+        <h1
+          data-aos="fade-down-right"
+          data-aos-duration="1000"
+          class="text-7xl text-center items-center text-white font-semibold pt-4 pb-2"
+        >
+          WCONF <span class="text-red-400">2023'</span>
         </h1>
-        <h1 class="text-4xl text-center items-center text-white font-thin ">
-         Department of <span class="text-white font-bold font-Manrope" data-aos="zoom-out-down"
-         data-aos-duration="1000">Electronics and Communication Engineering
-
-          </span> 
+        <h1 class="text-4xl text-center items-center text-white font-thin">
+          Department of
+          <span
+            class="text-white font-bold font-Manrope"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+            >Electronics and Communication Engineering
+          </span>
         </h1>
-        <h1 class="text-xl text-center items-center text-white font-normal  pb-12">
-          <span class="text-white">Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab, INDIA</span> 
+        <h1
+          class="text-xl text-center items-center text-white font-normal pb-12"
+        >
+          <span class="text-white"
+            >Dr B R Ambedkar National Institute of Technology, Jalandhar,
+            Punjab, INDIA</span
+          >
         </h1>
       </div>
-      <section class="aboutcards   sm:relative flex flex-col sm:flex-row sm:flex gap-y-16 sm:gap-24" data-aos="slide-up"
-      data-aos-duration="1000">
-        <div class="card-about w-[300px] h-[450px]  sm:w-[300px] sm:h-[450px] ">
-          <div  class="card-img-about1 shadow-2xl hover:shadow-white/30 shadow-slate-900/80 focus::shadow-white/30 w-[100%] h-[400px] sm:w-[100%] sm:relative sm:h-[100%]"></div>
+      <section
+        class="aboutcards sm:relative flex flex-col sm:flex-row sm:flex gap-y-16 sm:gap-24"
+        data-aos="slide-up"
+        data-aos-duration="1000"
+      >
+        <div class="card-about w-[300px] h-[450px] sm:w-[300px] sm:h-[450px]">
+          <div
+            class="card-img-about1 shadow-2xl hover:shadow-white/30 shadow-slate-900/80 focus::shadow-white/30 w-[100%] h-[400px] sm:w-[100%] sm:relative sm:h-[100%]"
+          ></div>
           <div class="card-body-about">
-              <span class="bg1"></span>
-              <span class="bg1"></span>
-              <span class="bg1"></span>
-              <div class="content">
-                  <h2 class="title text-2xl font-extrabold font-Abril">About Conference</h2>
-                  <p class="para">"All Accepted and Presented papers
-                    of WCONF 2023 will be submitted
-                    for inclusion into IEEE Xplore
-                    subject to meeting IEEE Xplore's
-                    scope and quality requirements"</p>
-              </div>
+            <span class="bg1"></span>
+            <span class="bg1"></span>
+            <span class="bg1"></span>
+            <div class="content">
+              <h2 class="title text-2xl font-extrabold font-Abril">
+                About Conference
+              </h2>
+              <p class="para">
+                "All Accepted and Presented papers of WCONF 2023 will be
+                submitted for inclusion into IEEE Xplore subject to meeting IEEE
+                Xplore's scope and quality requirements"
+              </p>
+            </div>
           </div>
-      </div>
-        <div class="card-about w-[300px] h-[450px]  sm:w-[300px] sm:h-[450px] ">
-          <div class="card-img-about2 shadow-2xl hover:shadow-white/30 shadow-slate-900/80 focus::shadow-white/30 w-[100%] h-[400px] sm:w-[100%] sm:relative sm:h-[100%]"></div>
+        </div>
+        <div class="card-about w-[300px] h-[450px] sm:w-[300px] sm:h-[450px]">
+          <div
+            class="card-img-about2 shadow-2xl hover:shadow-white/30 shadow-slate-900/80 focus::shadow-white/30 w-[100%] h-[400px] sm:w-[100%] sm:relative sm:h-[100%]"
+          ></div>
           <div class="card-body-about">
-              <span class="bg2"></span>
-              <span class="bg2"></span>
-              <span class="bg2"></span>
-              <div class="content">
-                  <h2 class="title text-2xl font-extrabold font-Abril">About <br> Institute</h2>
-                  <p class="para">Situated in the city of Jalandhar, one
-                    of the most prestigious college of
-                    india, catering pristine innovative
-                    minds and young talents of future</p>
-              </div>
+            <span class="bg2"></span>
+            <span class="bg2"></span>
+            <span class="bg2"></span>
+            <div class="content">
+              <h2 class="title text-2xl font-extrabold font-Abril">
+                About <br />
+                Institute
+              </h2>
+              <p class="para">
+                Situated in the city of Jalandhar, one of the most prestigious
+                college of india, catering pristine innovative minds and young
+                talents of future
+              </p>
+            </div>
           </div>
-      </div>
-        <div class="card-about w-[300px] h-[450px]  sm:w-[300px] sm:h-[450px] ">
-          <div class="card-img-about3 shadow-2xl hover:shadow-white/30 shadow-slate-900/80 focus::shadow-white/30 w-[100%] h-[400px] sm:w-[100%] sm:relative sm:h-[100%]"> </div>
+        </div>
+        <div class="card-about w-[300px] h-[450px] sm:w-[300px] sm:h-[450px]">
+          <div
+            class="card-img-about3 shadow-2xl hover:shadow-white/30 shadow-slate-900/80 focus::shadow-white/30 w-[100%] h-[400px] sm:w-[100%] sm:relative sm:h-[100%]"
+          ></div>
           <div class="card-body-about">
-              <span class="bg3"></span>
-              <span class="bg3"></span>
-              <span class="bg3"></span>
-              <div class="content">
-                  <h2 class="title text-2xl font-extrabold font-Abril">Call for  Papers</h2>
-                  <p class="para">"Accepted papers will be submitted
-                    for inclusion into IEEE Xplore
-                    subject to meeting IEEE Xplore's
-                    scope and quality requirements"</p>
-              </div>
+            <span class="bg3"></span>
+            <span class="bg3"></span>
+            <span class="bg3"></span>
+            <div class="content">
+              <h2 class="title text-2xl font-extrabold font-Abril">
+                Call for Papers
+              </h2>
+              <p class="para">
+                "Accepted papers will be submitted for inclusion into IEEE
+                Xplore subject to meeting IEEE Xplore's scope and quality
+                requirements"
+              </p>
+            </div>
           </div>
-      </div>
+        </div>
       </section>
     </div>
-	
 
-
-
-    
-<!-- table -->
-<section id="details"  data-aos="fade-up"
-data-aos-offset="200"
-data-aos-delay="50"
-data-aos-duration="1000"
-class="bg-black table-bg">
-  <span>
-    <h1 class="lg:text-7xl text-5xl text-center py-8 sm:py-12 font-semibold font-questrial text-[#ff8b83]">
-      Timeline
-    </h1>
-  </span>
-  <div  class=" p-4 m-4 font-Manrope pb-12 " data-aos="flip-right"
-  data-aos-offset="200"
-  data-aos-delay="50"
-  data-aos-duration="1000">
-   
-    <table class="container  shadow-sky-700 shadow-2xl rounded-2xl ">
-      <thead>
-          <!-- <tr> -->
-              <th>EVENT</th>
-              <th>DATE</th>
-              <th>TIME</th>
-              <!-- <th><h1>Average</h1></th> -->
-          <!-- </tr> -->
-      </thead>
-      <tbody>
-          <tr>
+    <!-- table -->
+    <section
+      id="details"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      class="bg-black table-bg"
+    >
+      <span>
+        <h1
+          class="lg:text-7xl text-5xl text-center py-8 sm:py-12 font-semibold font-questrial text-[#ff8b83]"
+        >
+          Timeline
+        </h1>
+      </span>
+      <div
+        class="p-4 m-4 font-Manrope pb-12"
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <table class="container shadow-sky-700 shadow-2xl rounded-2xl">
+          <thead>
+            <!-- <tr> -->
+            <th>EVENT</th>
+            <th>DATE</th>
+            <th>TIME</th>
+            <!-- <th><h1>Average</h1></th> -->
+            <!-- </tr> -->
+          </thead>
+          <tbody>
+            <tr>
               <td class="text-white">PAPER SUBMISSION DEADLINE</td>
               <td class="text-white">10th MARCH 2023</td>
               <td class="text-white">12:00 Noon</td>
               <!-- <td>01:32:50</td> -->
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td class="text-white">INTIMATION OF ACCEPTANCE</td>
               <td class="text-white">25th MARCH 2023</td>
               <td class="text-white">10:00 AM</td>
               <!-- <td>00:51:22</td> -->
-          </tr>
-          <tr>
-              <td>SUBMISSION OF CAMERA-READY PAPERS <br/> AND START OF REGISTRATION</td>
+            </tr>
+            <tr>
+              <td>
+                SUBMISSION OF CAMERA-READY PAPERS <br />
+                AND START OF REGISTRATION
+              </td>
               <td class="text-white">31st MARCH 2023</td>
               <td class="text-white">08:00 AM</td>
               <!-- <td>00:24:34</td> -->
-          </tr>
-      <tr>
+            </tr>
+            <tr>
               <td>LAST DATE OF REGISTRATION</td>
               <td class="text-white">10th APRIL 2023</td>
               <td class="text-white">12:00 Noon</td>
               <!-- <td>00:12:10</td> -->
-          </tr>
-      <tr>
+            </tr>
+            <tr>
               <td>Inaugration(Day1)</td>
               <td rowspan="2" class="text-white">14th APRIL 2023</td>
               <td class="text-white">10:00 AM</td>
               <!-- <td>00:46:19</td> -->
-          </tr>
-      <tr>
+            </tr>
+            <tr>
               <td>Plenary Talk(Day1)</td>
               <!-- <td>14thAPRIL 2023</td> -->
               <td class="text-white">10:30 AM</td>
               <!-- <td>00:31:52</td> -->
-          </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-      <!-- footer -->
-      <footer class="footer-distributed font-Manrope" data-aos="zoom-out-down">
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="footer-distributed font-Manrope"
+      data-aos="zoom-out-down"
+      id="contact"
+    >
+      <div class="footer-left text-center lg:text-left">
+        <h3 class="lg:text-3xl">
+          Computer Communication and <br />
+          Signal Processing<span>
+            <img
+              src="https://www.nitj.ac.in/public/assets/images/logo_250.png"
+              alt="Logo"
+              class="w-24 h-24 mt-[20px] ml-auto mr-auto lg:mr-0 lg:ml-0"
+            />
+          </span>
+        </h3>
 
-        <div class="footer-left text-center lg:text-left ">
+        <p class="footer-links">
+          <a
+            href="https://www.nitj.ac.in/"
+            class="hover:text-gray-300 transition-all"
+            >Home</a
+          >
+          ·
+          <a href="#" class="hover:text-gray-300 transition-all">About</a>
+          ·
+          <a href="#" class="hover:text-gray-300 transition-all"
+            >College-Website</a
+          >
+          ·
+          <a href="#" class="hover:text-gray-300 transition-all">For Authors</a>
+        </p>
 
-            <h3 class="lg:text-3xl"> Computer Communication and <br> Signal Processing<span> <img src="https://www.nitj.ac.in/public/assets/images/logo_250.png" alt="Logo" class="w-24 h-24 mt-[20px] ml-auto mr-auto lg:mr-0 lg:ml-0 "> </span></h3>
+        <p class="footer-company-name">
+          Dr B.R. Ambedkar National Institute of Technology<br />G.T. Road,
+          Amritsar Bypass, Jalandhar<br />Punjab, India-144011<br />+918847098873
+        </p>
 
-            <p class="footer-links">
-                <a href="#" class="hover:text-gray-300 transition-all">Home</a>
-                ·
-                <a href="about.html" class="hover:text-gray-300 transition-all">About</a>
-                ·
-                <a href="callforpapers.html" class="hover:text-gray-300 transition-all">Call-for-Papers</a>
-                ·
-                <a href="papersubmission.html" class="hover:text-gray-300 transition-all">Paper-Submission</a>
-                <a href="#" class="hover:text-gray-300 transition-all">Details</a>
-              
-
-            </p>
-
-            <p class="footer-company-name">Dr B.R. Ambedkar National Institute of Technology<br>G.T. Road, Amritsar
-                Bypass, Jalandhar<br>Punjab, India-144011<br>+918847098873 </p>
-
-            <div class="footer-icons">
-
-                <a href="#"><i class="fa fa-facebook hover:scale-125 transition-all"></i></a>
-                <a href="#"><i class="fa fa-twitter hover:scale-125 transition-all"></i></a>
-                <a href="#"><i class="fa fa-linkedin hover:scale-125 transition-all"></i></a>
-                <a href="#"><i class="fa fa-github hover:scale-125 transition-all"></i></a>
-
-            </div>
-
+        <div class="footer-icons">
+          <a href="#"
+            ><i class="fa fa-facebook hover:scale-125 transition-all"></i
+          ></a>
+          <a href="#"
+            ><i class="fa fa-twitter hover:scale-125 transition-all"></i
+          ></a>
+          <a href="#"
+            ><i class="fa fa-linkedin hover:scale-125 transition-all"></i
+          ></a>
+          <a href="#"
+            ><i class="fa fa-github hover:scale-125 transition-all"></i
+          ></a>
         </div>
+      </div>
 
-        <div class="footer-right">
+      <div class="footer-right">
+        <p class="text-2xl">Contact Us</p>
 
-            <p id="contact" class="text-2xl">Contact Us</p>
-
-            <form action="https://formsubmit.co/mauryanarinder2002@gmail.com"
-            method="POST">
-
-                <input type="text" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button class="formbutton" type="submit" >Send</button>
-
-            </form>
-
-        </div>
-
-    </footer> 
-
+        <form
+          action="https://formsubmit.co/mauryanarinder2002@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button class="formbutton" type="submit">Send</button>
+        </form>
+      </div>
+    </footer>
 
     <!-- external js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   
     <script>
       AOS.init();
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-    <script src="./main.js" ></script>
+    <script src="./main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   </body>
 </html>

@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE WCONF - NITJ</title>
+    <link rel="icon" type="image/x-icon" href="../images/nitj.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/f0737713a7.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Manrope:wght@200;400;500&family=Prompt:wght@200;300;400;500;600;800&family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
@@ -32,10 +33,8 @@
             class="w-16 h-16 hover:scale-110 transition-all sm:w-[15%] sm:h-[15%]"
           />
           <span
-            class="flex-col hover:animate-pulse transition-all font-semibold flex" data-aos="zoom-in-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            class="flex-col hover:animate-pulse transition-all font-semibold flex"
+            data-aos="zoom-in-left"
           >
             IEEE WCONF 2023<span class="text-xs text-gray-300 font-thin"
               >IEEE World Conference on <br class="sm:hidden" />
@@ -44,20 +43,24 @@
           </span></a
         >
 
-        <div class="nav-links flex-1 text-white text-xl text-right">
+        <div
+          class="nav-links flex-1 text-white text-xl text-right"
+          id="navLinks"
+        >
+         <i onclick="closeMenu()" class="fa-solid fa-circle-xmark sm:hidden p-12 text-3xl"> </i>
           <ul class="inline-block p-3 relative" data-aos="slide-right"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000">
             <li
-              class="inline-block border-white border-s-2 hover:text-[#A5D7E8] transition-all p-3 relative"
+              class="inline-block border-0 lg:border-white lg:border-s-2 hover:text-[#A5D7E8] transition-all p-3 relative"
             >
               <a href="index.html">Home</a>
             </li>
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
             >
-              <a href="about.html">About</a>
+              <a href="about.html" class="border-b-2 border-pink-300">About</a>
             </li>
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
@@ -67,10 +70,11 @@
             <li
               class="inline-block hover:text-[#A5D7E8] transition-all p-3 relative"
             >
-              <a href="">Authors </a>
+              <a href="authors.html">For Authors </a>
             </li>
           </ul>
         </div>
+        <i class="fa fa-bars " onclick="showMenu()"></i>
       </nav>
 
       <div class="text-box w-[90%] text-white text-center absolute">
@@ -753,9 +757,7 @@
       <!-- footer -->
    
       <footer class="footer-distributed font-Manrope" data-aos="zoom-out-down"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000">
+      id="contact">
 
         <div class="footer-left text-center lg:text-left ">
 
@@ -764,11 +766,11 @@
             <p class="footer-links">
                 <a href="https://www.nitj.ac.in/" class="hover:text-gray-300 transition-all">Home</a>
                 ·
-                <a href="#" class="hover:text-gray-300 transition-all">Blog</a>
-                ·
-                <a href="#" class="hover:text-gray-300 transition-all">FAQs</a>
-                ·
                 <a href="#" class="hover:text-gray-300 transition-all">About</a>
+                ·
+                <a href="#" class="hover:text-gray-300 transition-all">College-Website</a>
+                ·
+                <a href="#" class="hover:text-gray-300 transition-all">For-Authors</a>
 
             </p>
 
@@ -788,7 +790,7 @@
 
         <div class="footer-right">
 
-            <p id="contact" class="text-2xl">Contact Us</p>
+            <p  class="text-2xl">Contact Us</p>
 
             <form action="https://formsubmit.co/mauryanarinder2002@gmail.com"
             method="POST">
@@ -806,10 +808,10 @@
   
       <!-- external js -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-      <script src="./main.js" ></script>
-      <script type="text/javascript" src="particles.js"></script>
+ 
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script type="text/javascript" src="main.js"></script>
+      <script  src="main.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init();
