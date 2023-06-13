@@ -1939,12 +1939,12 @@ nav .fa {
 
   .nav-links ul li{
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
   }
 
   .nav-links {
     position: absolute;
-    background-color: #ffffff00;
+    background-color: #000000f1;
     height: 100vh;
     width: 200px;
     top: 0;
