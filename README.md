@@ -1,3 +1,6 @@
 # IEEE-23-Conference
-IEEE-Conference '23
+
+IEEE WCONF'23
+IEEE World Conference on Communication & Computing
+
 narinder
